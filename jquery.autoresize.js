@@ -1,5 +1,5 @@
 /*!
- * jQuery AutoResize plugin
+ * jQuery AutoResize
  */
 ;(function ($, window, document, undefined) {
 
