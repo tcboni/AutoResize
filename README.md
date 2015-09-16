@@ -1,8 +1,8 @@
 # AutoResize
 
-This is a jQuery plugin for vertically adjusting a textarea based on user input and controlling any presentation in CSS. <strong>No clone or ghost elements</strong> used.
+AutoResize is a jQuery plugin used for adjusting the height of textareas based on user input and controlling any presentation in CSS.
 
-So why build this? Many solutions didn't feel smooth. In some the textarea would flicker on entering new lines with a noticeable delay in resizing. Most were outdated and all were a lot bulkier than they had to be. Many had to use a mirror textarea or ghost element with some needing presentation values set in script. I wanted just the behavior in the script and anything regarding presentation should be controlled through CSS.
+This is something I built for my latest project (https://www.eagle-space.com). Most existing solutions didn't feel smooth. In some the textarea would flicker on entering new lines with a noticeable delay in resizing. Most were outdated and all were a lot bulkier than they had to be. Many had to use a mirror textarea or ghost element with some needing presentation values set in script. I wanted just the behavior in the script and anything regarding presentation should be controlled through CSS.
 
 ## Usage
 
@@ -12,9 +12,9 @@ Load the plugin and use jQuery to find the desired `textarea` elements on which 
 <textarea class="js-auto-size" rows="1"></textarea>
 
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src="jquery.textarea_autosize.min.js"></script>
+<script src="jquery.autoresize.min.js"></script>
 <script>
-  $('textarea.js-auto-size').textareaAutoSize();
+  $('textarea.js-auto-size').autoResize();
 </script>
 ```
 

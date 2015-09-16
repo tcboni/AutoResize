@@ -1,12 +1,7 @@
 /*!
- * jQuery Textarea AutoSize plugin
- * Author: Javier Julio
- * Licensed under the MIT license
+ * jQuery AutoResize plugin
  */
 ;(function ($, window, document, undefined) {
-
-  var pluginName = "textareaAutoSize";
-  var pluginDataName = "plugin_" + pluginName;
 
   var containsText = function (value) {
     return (value.replace(/\s/g, '').length > 0);
@@ -42,10 +37,10 @@
     }
   };
 
-  $.fn[pluginName] = function (options) {
+  $.fn['autoResize'] = function (options) {
     this.each(function() {
-      if (!$.data(this, pluginDataName)) {
-        $.data(this, pluginDataName, new Plugin(this, options));
+      if (!$.data(this, 'pluginAutoResize')) {
+        $.data(this, 'pluginAutoResize', new Plugin(this, options));
       }
     });
     return this;
