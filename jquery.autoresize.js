@@ -30,10 +30,10 @@
     });
   }
 
-  $.fn['autoResize'] = function (options) {
+  $.fn.autoResize = function (options) {
     this.each(function() {
-      if (!$.data(this, 'pluginAutoResize')) {
-        $.data(this, 'pluginAutoResize', init(this, options));
+      if (!$.data(this, 'autoResize')) {
+        $.data(this, 'autoResize', init(this, options));
       }
     });
     return this;
